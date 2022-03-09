@@ -1,0 +1,19 @@
+.footer {
+  background-color: #353535;
+  color: white;
+  
+  
+  h2 {
+        font-family: "shrikhand", cursive;
+        font-size: larger;
+        margin-top: 0px;
+        padding: 20px;
+    }
+}
+.footer__list{
+    list-style: none;
+    padding-left: 20px;
+            li{
+             padding-bottom: 10px;
+            }     
+}

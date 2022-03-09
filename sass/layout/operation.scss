@@ -1,0 +1,52 @@
+.operation{
+  padding-left: 20px;
+}
+.operation__title {
+  margin-bottom: 20px;
+}
+
+.operation__list {
+  padding-left: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  counter-reset: compteListe;
+  gap: 15px;
+}
+.operation__btn {
+  box-shadow: 4px 4px 2px lightgrey;
+  background-color: #f6f6f6;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0px;
+  &::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+    position: relative;
+    left: -10px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1600px){
+  .operation__list {
+    gap:70px;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    
+  }
+  .operation__btn {
+    flex-basis: 20%;
+  
+  }
+}

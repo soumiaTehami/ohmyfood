@@ -1,0 +1,245 @@
+@import "https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap";
+@import url("https://fonts.googleapis.com/css2 ? 1 300;1 400;1 500;1 600;1 700;1 800;1 900 & display=swap");
+* {
+  margin: 0px; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+main {
+  padding: 30px 0px 0px 0px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  width: 100%; }
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; } }
+.header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  font-size: 25px;
+  padding: 20px;
+  gap: 20px; }
+
+.header__explore {
+  background: whitesmoke;
+  padding: 50px;
+  padding-bottom: 80px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+  gap: 30px; }
+  .header__explore p {
+    font-size: 14px;
+    padding-bottom: 20px; }
+
+.btn a {
+  background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 10px 10px 10px #ad33b8;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: duration 200ms; }
+.btn:hover {
+  transform: scale(1.02);
+  opacity: 0.9; }
+
+.operation {
+  padding-left: 20px; }
+
+.operation__title {
+  margin-bottom: 20px; }
+
+.operation__list {
+  padding-left: 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  counter-reset: compteListe;
+  gap: 15px; }
+
+.operation__btn {
+  box-shadow: 4px 4px 2px lightgrey;
+  background-color: #f6f6f6;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0px; }
+  .operation__btn::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+    position: relative;
+    left: -10px; }
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+  .operation__list {
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+
+  .operation__btn {
+    flex-basis: 20%; } }
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin-top: 20px;
+  gap: 20px; }
+
+.card__img {
+  height: 150px;
+  width: 100%;
+  border: 0 solid transparent;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover; }
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 50px; }
+
+.card__tag {
+  background-color: #99e2d0;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+
+.card__body {
+  position: absolute; }
+  .card__body h3, .card__body p {
+    margin-top: 10px;
+    margin-left: 10px; }
+
+.card__btn {
+  position: relative;
+  left: 89%; }
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; }
+
+  .card {
+    flex-basis: 40%; }
+
+  .restaurants {
+    direction: flex;
+    flex-direction: column;
+    width: 98%; } }
+.footer {
+  background-color: #353535;
+  color: white; }
+  .footer h2 {
+    font-family: "shrikhand", cursive;
+    font-size: larger;
+    margin-top: 0px;
+    padding: 20px; }
+
+.footer__list {
+  list-style: none;
+  padding-left: 20px; }
+  .footer__list li {
+    padding-bottom: 10px; }
+
+#header__img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 300px; }
+
+.menu__title {
+  font-family: "shrikhand", cursive;
+  padding-bottom: 20px; }
+
+.menuliste__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative; }
+  .menuliste__title::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #99e2d0;
+    position: absolute;
+    bottom: -10px;
+    left: 0; }
+
+.menu__container {
+  position: relative;
+  margin-top: 250px;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0px 0px;
+  padding: 40px;
+  overflow: hidden; }
+
+.menuinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px; }
+
+.menuinfo__prix {
+  font-weight: 700; }
+
+.menuliste {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  padding-bottom: 40px; }
+
+.menu__container {
+  padding-bottom: 20px; }
+
+.btn {
+  text-align: center;
+  padding-bottom: 40px; }
+
+.menu__Selection {
+  background-color: #99e2d0;
+  margin-right: -100px; }
+
+/*# sourceMappingURL=style.css.map */
