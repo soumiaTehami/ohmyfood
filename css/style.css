@@ -402,7 +402,7 @@ a {
     position: relative;
     left: -10px; }
 
-@media screen and (min-width: 900px) and (max-width: 1600px) {
+@media screen and (min-width: 900px) {
   .operation__list {
     gap: 70px;
     display: flex;
@@ -456,7 +456,7 @@ a {
   position: relative;
   left: 89%; }
 
-@media screen and (min-width: 900px) and (max-width: 1600px) {
+@media screen and (min-width: 900px) {
   .card-container {
     display: flex;
     justify-content: center;
@@ -467,9 +467,12 @@ a {
     flex-basis: 40%; }
 
   .restaurants {
-    direction: flex;
     flex-direction: column;
-    width: 98%; } }
+    padding-left: 10%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    width: 65%; } }
 .footer {
   background-color: #353535;
   color: white; }
@@ -485,6 +488,11 @@ a {
   .footer__list li {
     padding-bottom: 10px; }
 
+@keyframes selection {
+  0% {
+    transform: rotate(-270deg); }
+  100% {
+    transform: rotate(0); } }
 #header__img {
   position: absolute;
   display: block;
@@ -523,17 +531,21 @@ a {
   align-items: flex-end;
   background-color: white;
   border-radius: 20px;
-  padding: 15px; }
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden; }
 
 .menuinfo__prix {
-  font-weight: 700; }
+  margin-left: auto;
+  font-weight: 700;
+  padding: 15px; }
 
 .menuliste {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 20px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  overflow: hidden; }
 
 .menu__container {
   padding-bottom: 20px; }
@@ -542,8 +554,27 @@ a {
   text-align: center;
   padding-bottom: 40px; }
 
-.menu__Selection {
+.menuinfo__Selection {
+  padding: 25px;
+  margin-right: -66px;
   background-color: #99e2d0;
-  margin-right: -100px; }
+  border-radius: 0px 20px 20px 0px;
+  transition: margin-right 0.5s; }
+  .menuinfo__Selection:hover {
+    margin-right: 0px; }
+    .menuinfo__Selection:hover i {
+      animation: selection 0.5s ease-in-out; }
+  .menuinfo__Selection i {
+    background-color: white;
+    border-radius: 20px;
+    color: #99e2d0; }
+
+.menuinfo__div {
+  padding: 15px;
+  overflow: hidden; }
+  .menuinfo__div h4, .menuinfo__div p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,12 @@
+@keyframes selection {
+  0%{
+    transform: rotate(-270deg);
+  }
+  100%{
+    transform: rotate(0);
+  };
+  
+}
 #header__img {
   position: absolute;
   display: block;
@@ -8,11 +17,10 @@
 .menu__title {
   font-family: "shrikhand", cursive;
   padding-bottom: 20px;
- 
 }
 .menuliste__title {
-  text-transform:uppercase;
-  font-weight:300;
+  text-transform: uppercase;
+  font-weight: 300;
   position: relative;
   &::after {
     content: "";
@@ -38,10 +46,14 @@
   align-items: flex-end;
   background-color: white;
   border-radius: 20px;
-  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+  
 }
 .menuinfo__prix {
+  margin-left: auto;
   font-weight: 700;
+  padding: 15px;
 }
 .menuliste {
   display: flex;
@@ -49,6 +61,7 @@
   flex: 1;
   gap: 20px;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 .menu__container {
   padding-bottom: 20px;
@@ -59,7 +72,31 @@
   padding-bottom: 40px;
 }
 
-.menu__Selection {
+.menuinfo__Selection {
+  padding: 25px;
+  margin-right: -66px;
   background-color: #99e2d0;
-  margin-right: -100px;
+  border-radius: 0px 20px 20px 0px;
+  transition: margin-right 0.5s;
+  &:hover {
+    margin-right: 0px;
+        i{
+          animation:selection 0.5s ease-in-out;
+        }
+  }
+  i {
+    background-color: white;
+    border-radius: 20px;
+    color: #99e2d0;
+  }
+}
+.menuinfo__div {
+  padding: 15px;
+  overflow: hidden;
+   h4,p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+   }
+  
 }
