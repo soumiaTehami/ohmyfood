@@ -61,6 +61,7 @@
   overflow: hidden;
   animation: appear 1s;
   animation-fill-mode: both;
+  
 }
 .menuinfo__prix {
   margin-left: auto;
@@ -91,14 +92,15 @@
   background-color: #99e2d0;
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
-  transition: margin-right 1s;
+  transition: selection 0.5s;
   transform: scale(1s);
   &:hover {
-    margin-right: 0px;
-  }
-
-  i {
-    animation: selection 0.5s ease-in-out;
+    
+      margin-right: 0px;
+    
+    i {
+      animation: selection 0.5s;
+    }
   }
 
   i {
@@ -116,7 +118,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
- 
 }
 .header__home {
   position: absolute;
@@ -125,10 +126,11 @@
   left: 10px;
   cursor: pointer;
 }
-@media screen and (min-width: 600px){
-  .submenus{
+@media screen and (min-width: 600px) {
+  .submenus {
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
-  }}
+  }
+}

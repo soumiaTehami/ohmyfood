@@ -6,7 +6,7 @@
     width:100%;
       
 }
-@media screen and (min-width: 900px){
+@media (min-width: 900px) {
     .header__logo {
         display: flex;
         justify-content: center;
@@ -15,7 +15,6 @@
 .header__location {
     display: flex;
     justify-content:center;
-    align-items: center;
     background-color: #eaeaea;
     font-size: 25px;
     padding: 20px;

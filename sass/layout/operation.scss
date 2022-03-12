@@ -37,10 +37,9 @@
     left: -10px;
   }
 }
-@media screen and (min-width: 900px) {
+@media (min-width: 900px)  {
   .operation__list {
-    gap:70px;
-    display: flex;
+    gap: 20px;
     justify-content: center;
     flex-direction:row;
     

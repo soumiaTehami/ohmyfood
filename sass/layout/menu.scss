@@ -49,23 +49,16 @@
 }
 
 
-@media screen and (min-width: 900px){
+@media (min-width: 900px) {
   .card-container{
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
   .card {
-    flex-basis: 40%;
-    
-    
-
+    width: 300px;
   }
   .restaurants {
-    flex-direction:column;
-    padding-left: 10%;
-    padding: 30px;
     margin: auto;
     margin-top: 10px;
     width: 60%;
