@@ -462,7 +462,7 @@ a {
     flex-direction: row; }
 
   .card {
-    width: 300px; }
+    width: 40%; }
 
   .restaurants {
     margin: auto;
@@ -586,10 +586,11 @@ a {
     overflow: hidden; }
 
 .header__home {
-  position: absolute;
+  display: inline-flex;
+  align-items: flex-end;
   transform: translateY(60%);
-  font-size: 1.2rem;
-  left: 10px;
+  font-size: 20px;
+  left: -50px;
   cursor: pointer; }
 
 @media screen and (min-width: 600px) {
