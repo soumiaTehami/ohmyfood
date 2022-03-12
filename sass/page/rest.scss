@@ -1,11 +1,21 @@
 @keyframes selection {
-  0%{
+  0% {
     transform: rotate(-270deg);
   }
-  100%{
+  100% {
     transform: rotate(0);
-  };
-  
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #header__img {
   position: absolute;
@@ -39,6 +49,7 @@
   border-radius: 30px 30px 0px 0px;
   padding: 40px;
   overflow: hidden;
+  cursor: pointer;
 }
 .menuinfo {
   display: flex;
@@ -48,7 +59,8 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   overflow: hidden;
-  
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
 .menuinfo__prix {
   margin-left: auto;
@@ -63,6 +75,7 @@
   padding-bottom: 40px;
   overflow: hidden;
 }
+
 .menu__container {
   padding-bottom: 20px;
 }
@@ -77,13 +90,17 @@
   margin-right: -66px;
   background-color: #99e2d0;
   border-radius: 0px 20px 20px 0px;
-  transition: margin-right 0.5s;
+  cursor: pointer;
+  transition: margin-right 1s;
+  transform: scale(1s);
   &:hover {
     margin-right: 0px;
-        i{
-          animation:selection 0.5s ease-in-out;
-        }
   }
+
+  i {
+    animation: selection 0.5s ease-in-out;
+  }
+
   i {
     background-color: white;
     border-radius: 20px;
@@ -93,10 +110,25 @@
 .menuinfo__div {
   padding: 15px;
   overflow: hidden;
-   h4,p{
+  h4,
+  p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-   }
-  
+  }
+ 
 }
+.header__home {
+  position: absolute;
+  transform: translateY(60%);
+  font-size: 1.2rem;
+  left: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 600px){
+  .submenus{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }}
