@@ -1,3 +1,4 @@
+@import "../utils/variables";
 .operation{
   padding-left: 20px;
 }
@@ -14,8 +15,8 @@
   gap: 15px;
 }
 .operation__btn {
-  box-shadow: 4px 4px 2px lightgrey;
-  background-color: #f6f6f6;
+  box-shadow: 4px 4px 2px $color3;
+  background-color:$color-font;
   padding: 25px;
   border-radius: 20px;
   display: flex;
@@ -25,19 +26,19 @@
   &::before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
-    background: #9356dc;
+    background: $colorSecondaire;
     width: 30px;
     height: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f6f6f6;
+    color:$color-font;
     position: relative;
     left: -10px;
   }
 }
-@media (min-width: 900px)  {
+@media (min-width:$media)  {
   .operation__list {
     gap: 20px;
     justify-content: center;

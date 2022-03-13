@@ -1,6 +1,7 @@
+@import "../utils/variables";
 .footer {
-  background-color: #353535;
-  color: white;
+  background-color:$color-footer;
+  color: $color-white;
   
   
   h2 {

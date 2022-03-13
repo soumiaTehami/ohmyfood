@@ -1,12 +1,12 @@
+@import "../utils/variables";
 .header__logo {
     position: relative;
     display: flex;
     justify-content: center;
     height: 45px;
-    width:100%;
       
 }
-@media (min-width: 900px) {
+@media (min-width:$media) {
     .header__logo {
         display: flex;
         justify-content: center;
@@ -15,13 +15,13 @@
 .header__location {
     display: flex;
     justify-content:center;
-    background-color: #eaeaea;
+    background-color:$color1;
     font-size: 25px;
     padding: 20px;
     gap:20px;
 }
 .header__explore {
-    background: whitesmoke;
+    background:$color2;
     padding: 50px;
     padding-bottom: 80px;
     display: flex;
