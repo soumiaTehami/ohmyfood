@@ -20,13 +20,19 @@
   position: relative;
   text-decoration: none;
   color: inherit;
-  padding-bottom:50px;
+  padding-bottom:70px;
+  
+&:hover {
+  transition: all 200ms;
+  transform: scale(1.02);
+}
 }
 .card__tag{
    background-color:$color-tertiary;
     padding: 10px;
     position: absolute;
     top: 10px;
+    color:$color6;
     right:10px;
 }
 .card-container{
@@ -43,12 +49,14 @@
       }
            
 }
-.card__btn{
-  position: relative;
-  left: 89%;
-  
-}
 
+.menu__btn{
+  position:relative;
+  left: 80%;
+  top:-50px;
+  cursor: pointer;
+  font-size: 30px;
+}
 
 @media (min-width:$media) {
   .card-container{

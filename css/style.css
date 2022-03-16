@@ -430,13 +430,17 @@ a {
   position: relative;
   text-decoration: none;
   color: inherit;
-  padding-bottom: 50px; }
+  padding-bottom: 70px; }
+  .card:hover {
+    transition: all 200ms;
+    transform: scale(1.02); }
 
 .card__tag {
   background-color: #99e2d0;
   padding: 10px;
   position: absolute;
   top: 10px;
+  color: #3b8468;
   right: 10px; }
 
 .card-container {
@@ -450,9 +454,12 @@ a {
     margin-top: 10px;
     margin-left: 10px; }
 
-.card__btn {
+.menu__btn {
   position: relative;
-  left: 89%; }
+  left: 80%;
+  top: -50px;
+  cursor: pointer;
+  font-size: 30px; }
 
 @media (min-width: 900px) {
   .card-container {
@@ -566,20 +573,20 @@ a {
   cursor: pointer;
   transition: selection 0.5s;
   transform: scale(1s); }
-  .menuinfo__Selection:hover {
-    margin-right: 0px; }
-    .menuinfo__Selection:hover i {
-      animation: selection 0.5s; }
   .menuinfo__Selection i {
     background-color: white;
     border-radius: 20px;
     color: #99e2d0; }
 
+.menuinfo:hover .menuinfo__Selection {
+  margin-right: 0px; }
+  .menuinfo:hover .menuinfo__Selection i {
+    animation: selection 0.5s; }
+
 .menuinfo__div {
   padding: 15px;
   overflow: hidden; }
-  .menuinfo__div h4,
-  .menuinfo__div p {
+  .menuinfo__div h4, .menuinfo__div p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
@@ -587,7 +594,7 @@ a {
 .header__home {
   position: absolute;
   transform: translateY(40%);
-  font-size: 30px;
+  font-size: 20px;
   left: 20px;
   cursor: pointer; }
 
@@ -597,5 +604,26 @@ a {
     flex-direction: row;
     gap: 10px;
     justify-content: center; } }
+.card__btn {
+  position: relative;
+  left: 90%;
+  bottom: -20px;
+  cursor: pointer;
+  font-size: 30px; }
+  .card__btn i {
+    position: absolute;
+    cursor: pointer; }
+  .card__btn i.hollow {
+    color: transparent; }
+
+.card__btn:hover i.hollow {
+  animation: remplissage 1000ms forwards;
+  color: aquamarine; }
+
+@keyframes remplissage {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=style.css.map */
