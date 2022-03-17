@@ -1,23 +1,5 @@
 
-@keyframes selection {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 #header__img {
   position: absolute;
   display: block;
@@ -96,13 +78,7 @@
   cursor: pointer;
   transition:selection 0.5s;
   transform: scale(1s);
-  // &:hover{
-  //   margin-right: 0px;
-  //   i {
-  //     animation:selection 0.5s;
-  //   } 
-  //}
-
+  
   i {
     background-color:$color-white;
     border-radius: 20px;

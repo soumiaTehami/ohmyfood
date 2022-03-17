@@ -1,0 +1,70 @@
+@keyframes selection {
+    0% {
+      transform: rotate(-270deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .card__btn{
+    position:relative;
+    left: 90%;
+    bottom: -20px;
+    cursor: pointer;
+    font-size: 30px;
+        i{
+          position: absolute;
+          cursor: pointer;
+        } 
+        i.hollow{
+          color: transparent;
+          
+        }   
+  }
+  .card__btn:hover i.hollow{
+      animation: remplissage 1000ms forwards;
+      background-image: linear-gradient($colorSecondaire,$color5);
+      background-clip:text;
+      -webkit-background-clip:text;
+  }
+  
+  @keyframes remplissage {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+  }
+  .menu__btn{
+    position:relative;
+    left: 90%;
+    top:-50px;
+    cursor: pointer;
+    font-size: 30px;
+    i{
+      position: absolute;
+      cursor: pointer;
+    } 
+    i.hollow{
+      color: transparent;
+      
+    }  
+  }
+  .menu__btn:hover i.hollow{
+    animation: remplissage 1000ms forwards;
+    background-image: linear-gradient($colorSecondaire,$color5);
+    background-clip:text;
+    -webkit-background-clip:text;
+  }

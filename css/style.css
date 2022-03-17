@@ -9,9 +9,7 @@
 @import url("https://fonts.googleapis.com/css2 ? 1 300;1 400;1 500;1 600;1 700;1 800;1 900 & display=swap");
 html {
   line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 1 */ }
 
 /* Sections
    ========================================================================== */
@@ -170,37 +168,15 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
 /**
  * Correct the padding in Firefox.
  */
-fieldset {
-  padding: 0.35em 0.75em 0.625em; }
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -247,10 +223,6 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
@@ -264,19 +236,10 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
 /* Interactive
    ========================================================================== */
 /*
@@ -454,13 +417,6 @@ a {
     margin-top: 10px;
     margin-left: 10px; }
 
-.menu__btn {
-  position: relative;
-  left: 80%;
-  top: -50px;
-  cursor: pointer;
-  font-size: 30px; }
-
 @media (min-width: 900px) {
   .card-container {
     justify-content: center;
@@ -489,18 +445,6 @@ a {
   .footer__list li {
     padding-bottom: 10px; }
 
-@keyframes selection {
-  0% {
-    transform: rotate(-270deg); }
-  100% {
-    transform: rotate(0); } }
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(50px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
 #header__img {
   position: absolute;
   display: block;
@@ -604,6 +548,18 @@ a {
     flex-direction: row;
     gap: 10px;
     justify-content: center; } }
+@keyframes selection {
+  0% {
+    transform: rotate(-270deg); }
+  100% {
+    transform: rotate(0); } }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 .card__btn {
   position: relative;
   left: 90%;
@@ -618,12 +574,31 @@ a {
 
 .card__btn:hover i.hollow {
   animation: remplissage 1000ms forwards;
-  color: aquamarine; }
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text; }
 
 @keyframes remplissage {
   from {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+.menu__btn {
+  position: relative;
+  left: 90%;
+  top: -50px;
+  cursor: pointer;
+  font-size: 30px; }
+  .menu__btn i {
+    position: absolute;
+    cursor: pointer; }
+  .menu__btn i.hollow {
+    color: transparent; }
+
+.menu__btn:hover i.hollow {
+  animation: remplissage 1000ms forwards;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text; }
 
 /*# sourceMappingURL=style.css.map */
