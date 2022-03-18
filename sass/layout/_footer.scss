@@ -2,8 +2,6 @@
 .footer {
   background-color:$color-footer;
   color: $color-white;
-  
-  
   h2 {
         font-family: "shrikhand", cursive;
         font-size: larger;
@@ -15,6 +13,6 @@
     list-style: none;
     padding-left: 20px;
             li{
-             padding-bottom: 10px;
+             margin-bottom: 10px;
             }     
 }

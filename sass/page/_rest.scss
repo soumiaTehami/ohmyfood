@@ -32,7 +32,7 @@
   border-radius: 30px 30px 0px 0px;
   padding: 40px;
   overflow: hidden;
-  cursor: pointer;
+
 }
 .menuinfo {
   display: flex;
@@ -44,6 +44,7 @@
   overflow: hidden;
   animation: appear 1s;
   animation-fill-mode: both;
+  cursor: pointer;
  
 }
 .menuinfo__prix {
@@ -76,8 +77,8 @@
   background-color:$color4;
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
-  transition:selection 0.5s;
-  transform: scale(1s);
+  transition:direction 0.5s;
+  transform: scale(1);
   
   i {
     background-color:$color-white;
@@ -90,7 +91,7 @@
   .menuinfo__Selection{
     margin-right: 0px;
     i {
-      animation:selection 0.5s;
+      animation:direction 0.5s;
     }
   }
 }
