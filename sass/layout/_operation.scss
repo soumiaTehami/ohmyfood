@@ -1,5 +1,6 @@
 
 .operation{
+  padding-top: 40px;
   padding-left: 20px;
 }
 .operation__title {
@@ -13,6 +14,8 @@
   flex-direction: column;
   counter-reset: compteListe;
   gap: 15px;
+  
+  
 }
 .operation__btn {
   box-shadow: 4px 4px 2px $color3;
@@ -23,6 +26,7 @@
   align-items: center;
   gap: 10px;
   padding-left: 0px;
+  
   &::before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
@@ -37,6 +41,16 @@
     position: relative;
     left: -10px;
   }
+  &:hover{
+    transition: all 200ms;
+    transform: scale(1.02);
+    background-color: lighten($colorSecondaire,35%);
+    
+    i{
+      color:$colorSecondaire ;
+    }
+     }
+  
 }
 @media (min-width:$media)  {
   .operation__list {
