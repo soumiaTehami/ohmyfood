@@ -1,4 +1,4 @@
-# Oh my food !
+# ohmyfood
 Troisième projet du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette  nommé "Ohmyfood" permettant la commande de repas en ligne.
 ## Technologies
