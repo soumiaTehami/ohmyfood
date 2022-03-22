@@ -1,8 +1,7 @@
-
 .restaurants {
   display: flex;
   flex-direction: column;
-  background-color:$color-font;
+  background-color: $color-font;
   padding: 40px 20px;
   margin-top: 20px;
   gap: 20px;
@@ -15,58 +14,52 @@
   object-fit: cover;
 }
 .card {
-  background-color:$color-card;
+  background-color: $color-card;
   border-radius: 10px;
   position: relative;
   text-decoration: none;
   color: inherit;
-  padding-bottom:70px;
-  
-&:hover {
-  transition: all 200ms;
-  transform: scale(1.02);
+  padding-bottom: 70px;
+
+  &:hover {
+    transition: all 200ms;
+    transform: scale(1.02);
+  }
 }
+.card__tag {
+  background-color: $color-tertiary;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  color: $color6;
+  right: 10px;
 }
-.card__tag{
-   background-color:$color-tertiary;
-    padding: 10px;
-    position: absolute;
-    top: 10px;
-    color:$color6;
-    right:10px;
-}
-.card-container{
+.card-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.card__body{
+.card__body {
   position: absolute;
-  
-      h3,p{
-        margin-top: 10px;
-        margin-left: 10px;
-      }
-           
+
+  h3,
+  p {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
-
-
-
-@media (min-width:$media) {
-  .card-container{
+@media (min-width: $media) {
+  .card-container {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
   }
   .card {
-    width:40%;
+    width: 40%;
   }
   .restaurants {
-    margin:auto;
+    margin: auto;
     margin-top: 10px;
     width: 62%;
-
-    
   }
- 
 }

@@ -1,5 +1,4 @@
-
-.operation{
+.operation {
   padding-top: 40px;
   padding-left: 20px;
 }
@@ -14,19 +13,17 @@
   flex-direction: column;
   counter-reset: compteListe;
   gap: 15px;
-  
-  
 }
 .operation__btn {
   box-shadow: 4px 4px 2px $color3;
-  background-color:$color-font;
+  background-color: $color-font;
   padding: 25px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-left: 0px;
-  
+
   &::before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
@@ -37,30 +34,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:$color-font;
+    color: $color-font;
     position: relative;
     left: -10px;
   }
-  &:hover{
+  &:hover {
     transition: all 200ms;
     transform: scale(1.02);
-    background-color: lighten($colorSecondaire,35%);
-    
-    i{
-      color:$colorSecondaire ;
+    background-color: lighten($colorSecondaire, 35%);
+
+    i {
+      color: $colorSecondaire;
     }
-     }
-  
+  }
 }
-@media (min-width:$media)  {
+@media (min-width: $media) {
   .operation__list {
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
-    flex-direction:row;
-    
+    flex-direction: row;
   }
   .operation__btn {
     flex-basis: 20%;
-  
+  }
+  .operation__title {
+    margin-left: 180px;
   }
 }

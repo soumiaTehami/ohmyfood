@@ -336,9 +336,9 @@ a {
   gap: 20px; }
 
 .header__explore {
-  background: whitesmoke;
   padding: 50px;
   padding-bottom: 80px;
+  background: whitesmoke;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -372,9 +372,8 @@ a {
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: spin 3s;
-  animation-fill-mode: forwards;
-  transform-origin: top; }
+  animation: spin 4s;
+  animation-fill-mode: forwards; }
   .loader::after {
     content: "";
     text-align: center;
@@ -441,12 +440,15 @@ a {
 
 @media (min-width: 900px) {
   .operation__list {
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     flex-direction: row; }
 
   .operation__btn {
-    flex-basis: 20%; } }
+    flex-basis: 20%; }
+
+  .operation__title {
+    margin-left: 180px; } }
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -488,7 +490,8 @@ a {
 
 .card__body {
   position: absolute; }
-  .card__body h3, .card__body p {
+  .card__body h3,
+  .card__body p {
     margin-top: 10px;
     margin-left: 10px; }
 
@@ -507,7 +510,8 @@ a {
     width: 62%; } }
 .footer {
   background-color: #353535;
-  color: white; }
+  color: white;
+  padding-bottom: 20px; }
   .footer h2 {
     font-family: "shrikhand", cursive;
     font-size: larger;
@@ -549,7 +553,7 @@ a {
   margin-top: 250px;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
-  padding: 40px;
+  padding: 40px 20px 60px;
   overflow: hidden; }
 
 .menuinfo {
@@ -577,30 +581,9 @@ a {
   padding-bottom: 40px;
   overflow: hidden; }
 
-.menu__container {
-  padding-bottom: 20px; }
-
 .btn {
   text-align: center;
   padding-bottom: 40px; }
-
-.menuinfo__Selection {
-  padding: 25px;
-  margin-right: -66px;
-  background-color: #99e2d0;
-  border-radius: 0px 20px 20px 0px;
-  cursor: pointer;
-  transition: direction 0.5s;
-  transform: scale(1); }
-  .menuinfo__Selection i {
-    background-color: white;
-    border-radius: 20px;
-    color: #99e2d0; }
-
-.menuinfo:hover .menuinfo__Selection {
-  margin-right: 0px; }
-  .menuinfo:hover .menuinfo__Selection i {
-    animation: direction 0.5s; }
 
 .menuinfo__div {
   padding: 15px;
@@ -636,6 +619,24 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+.menuinfo__Selection {
+  padding: 25px;
+  margin-right: -66px;
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  transition: direction 0.5s;
+  transform: scale(1); }
+  .menuinfo__Selection i {
+    background-color: white;
+    border-radius: 20px;
+    color: #99e2d0; }
+
+.menuinfo:hover .menuinfo__Selection {
+  margin-right: 0px; }
+  .menuinfo:hover .menuinfo__Selection i {
+    animation: direction 0.5s; }
+
 .card__btn {
   position: relative;
   left: 90%;
