@@ -1,6 +1,5 @@
 .operation {
-  padding-top: 40px;
-  padding-left: 20px;
+padding: 40px 20px;
 }
 .operation__title {
   margin-bottom: 20px;
@@ -13,6 +12,8 @@
   flex-direction: column;
   counter-reset: compteListe;
   gap: 15px;
+  cursor: pointer;
+
 }
 .operation__btn {
   box-shadow: 4px 4px 2px $color3;

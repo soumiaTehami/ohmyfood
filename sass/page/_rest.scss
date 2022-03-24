@@ -57,10 +57,9 @@
   overflow: hidden;
 }
 
-
-.btn {
-  text-align: center;
-  padding-bottom: 40px;
+.menu__button{
+  display: flex;
+  justify-content: center;
 }
 
 .menuinfo__div {
