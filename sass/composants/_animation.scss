@@ -1,94 +1,102 @@
 @keyframes direction {
-    0% {
-      transform: rotate(-270deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
+  0% {
+    transform: rotate(-270deg);
   }
-  @keyframes appear {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    transform: rotate(0);
   }
+}
+@keyframes check {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menuinfo__Selection {
+  padding: 25px;
+  margin-right: -66px;
+  background-color: $color4;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  transition: direction 1s;
+  transform: scale(1);
+  transition: margin-right 0.6s;
+
+  i {
+    background-color: $color-white;
+    border-radius: 20px;
+    color: $color4;
+  }
+}
+
+.menuinfo:hover {
   .menuinfo__Selection {
-    padding: 25px;
-    margin-right: -66px;
-    background-color: $color4;
-    border-radius: 0px 20px 20px 0px;
-    cursor: pointer;
-    transition: direction 0.5s;
-    transform: scale(1);
-  
+    margin-right: 0px;
+
     i {
-      background-color: $color-white;
-      border-radius: 20px;
-      color: $color4;
+      animation: direction 0.5s;
     }
   }
-  
-  .menuinfo:hover {
-    .menuinfo__Selection {
-      margin-right: 0px;
-      i {
-        animation: direction 0.5s;
-      }
-    }
-  }
-  .card__btn{
-    position:relative;
-    left: 90%;
-    bottom: -20px;
+}
+.card__btn {
+  position: relative;
+  left: 90%;
+  bottom: -20px;
+  cursor: pointer;
+  font-size: 30px;
+  i {
+    position: absolute;
     cursor: pointer;
-    font-size: 30px;
-        i{
-          position: absolute;
-          cursor: pointer;
-        } 
-        i.hollow{
-          color: transparent;
-          
-        }   
   }
-  .card__btn:hover i.hollow{
-      animation: remplissage 1000ms forwards;
-      background-image: linear-gradient($colorSecondaire,$color5);
-      background-clip:text;
-      -webkit-background-clip:text;
+  i.hollow {
+    color: transparent;
   }
-  
-  @keyframes remplissage {
-    from{
-        transform: scale(0);
-    }
-    to{
-        transform: scale(0.85);
-    }
+}
+.card__btn:hover i.hollow {
+  animation: remplissage 1000ms forwards;
+  background-image: linear-gradient($colorSecondaire, $color5);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes remplissage {
+  from {
+    transform: scale(0);
   }
-  .menu__btn{
-    position:relative;
-    left: 90%;
-    top:-50px;
+  to {
+    transform: scale(1);
+  }
+}
+.menu__btn {
+  position: relative;
+  left: 90%;
+  top: -50px;
+  cursor: pointer;
+  font-size: 30px;
+  i {
+    position: absolute;
     cursor: pointer;
-    font-size: 30px;
-    i{
-      position: absolute;
-      cursor: pointer;
-    } 
-    i.hollow{
-      color: transparent;
-      
-    }  
   }
-  .menu__btn:hover i.hollow{
-    animation: remplissage 1000ms forwards;
-    background-image: linear-gradient($colorSecondaire,$color5);
-    background-clip:text;
-    -webkit-background-clip:text;
+  i.hollow {
+    color: transparent;
   }
+}
+.menu__btn:hover i.hollow {
+  animation: remplissage 1000ms forwards;
+  background-image: linear-gradient($colorSecondaire, $color5);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
