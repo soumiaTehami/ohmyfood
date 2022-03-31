@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: white;
+  background-color:$color-white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   overflow: hidden;
@@ -51,7 +51,6 @@
 .menuliste {
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 20px;
   padding-bottom: 40px;
   overflow: hidden;
@@ -60,7 +59,6 @@
   display: flex;
   justify-content: center;
 }
-
 .menuinfo__div {
   padding: 15px;
   overflow: hidden;
