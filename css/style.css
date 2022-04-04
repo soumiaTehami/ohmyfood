@@ -320,7 +320,9 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 45px; }
+  height: 30px;
+  padding-bottom: 10px;
+  box-shadow: 0px 5px 5px lightgrey; }
 
 @media (min-width: 992px) {
   .header__logo {
@@ -354,7 +356,7 @@ a {
   text-decoration: none;
   color: white;
   padding: 20px 40px;
-  box-shadow: 10px 10px 10px #ad33b8;
+  box-shadow: 10px 10px 10px lightgrey;
   border-radius: 30px;
   cursor: pointer;
   transition: duration 200ms;
@@ -514,18 +516,27 @@ a {
 .footer {
   background-color: #353535;
   color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   padding-bottom: 20px; }
   .footer h2 {
     font-family: "shrikhand", cursive;
     font-size: larger;
     margin-top: 0px;
-    padding: 20px; }
+    padding-bottom: 15px; }
+
+.footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline-start: 0px; }
 
 .footer__list {
   list-style: none;
-  padding-left: 20px; }
-  .footer__list li {
-    margin-bottom: 10px; }
+  display: flex;
+  align-items: center;
+  gap: 10px; }
 
 #header__img {
   position: absolute;
